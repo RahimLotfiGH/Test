@@ -1,0 +1,389 @@
+[2024-05-17 15:16:47.853 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 18:49:26.547 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:18:00.739 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:18:54.517 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:19:13.717 ERR ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.<CreateList>b__9_0(OrderCommodityCommand item) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 72
+   at System.Linq.Utilities.<>c__DisplayClass2_0`3.<CombineSelectors>b__0(TSource x)
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateList() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 71
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateOrderFromRequest() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 60
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ValidationAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 36
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2024-05-17 19:19:13.760 INF ] HTTP POST /Api/V1/ExceptionHandler/Index responded 404 in 1.6229 ms
+[2024-05-17 19:19:13.762 ERR ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+ ---> System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.<CreateList>b__9_0(OrderCommodityCommand item) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 72
+   at System.Linq.Utilities.<>c__DisplayClass2_0`3.<CombineSelectors>b__0(TSource x)
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateList() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 71
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateOrderFromRequest() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 60
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ValidationAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 36
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2024-05-17 19:23:07.403 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:23:31.715 ERR ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.<CreateList>b__9_0(OrderCommodityCommand item) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 72
+   at System.Linq.Utilities.<>c__DisplayClass2_0`3.<CombineSelectors>b__0(TSource x)
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateList() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 71
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateOrderFromRequest() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 60
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ValidationAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 36
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2024-05-17 19:23:31.728 INF ] HTTP POST /Api/V1/ExceptionHandler/Index responded 404 in 1.4756 ms
+[2024-05-17 19:23:31.731 ERR ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+ ---> System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.<CreateList>b__9_0(OrderCommodityCommand item) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 72
+   at System.Linq.Utilities.<>c__DisplayClass2_0`3.<CombineSelectors>b__0(TSource x)
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateList() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 71
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.CreateOrderFromRequest() in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 60
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ValidationAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 36
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2024-05-17 19:27:29.342 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:30:31.380 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:31:30.101 ERR ] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'StatusDescription', table 'AUADb.Ordering.Order'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:83670aaa-2b63-4647-8465-a0bb08f9ca4e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at AUA.ProjectName.DataLayer.AppContext.EntityFrameworkContext.ApplicationEfContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.DataLayer\AppContext\EntityFrameworkContext\ApplicationEfContext.cs:line 61
+   at AUA.Infrastructure.Repositories.BaseRepository.SaveChangesAsync(CancellationToken cancellationToken)
+   at AUA.Infrastructure.BaseServices.DomainEntityService`2.InsertAsync(TEntity entity, CancellationToken cancellationToken)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 54
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2024-05-17 19:31:30.132 INF ] HTTP POST /Api/V1/ExceptionHandler/Index responded 404 in 1.7211 ms
+[2024-05-17 19:31:30.137 ERR ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'StatusDescription', table 'AUADb.Ordering.Order'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:83670aaa-2b63-4647-8465-a0bb08f9ca4e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at AUA.ProjectName.DataLayer.AppContext.EntityFrameworkContext.ApplicationEfContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.DataLayer\AppContext\EntityFrameworkContext\ApplicationEfContext.cs:line 61
+   at AUA.Infrastructure.Repositories.BaseRepository.SaveChangesAsync(CancellationToken cancellationToken)
+   at AUA.Infrastructure.BaseServices.DomainEntityService`2.InsertAsync(TEntity entity, CancellationToken cancellationToken)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 54
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2024-05-17 19:32:19.482 ERR ] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'StatusDescription', table 'AUADb.Ordering.Order'; column does not allow nulls. UPDATE fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:83670aaa-2b63-4647-8465-a0bb08f9ca4e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at AUA.ProjectName.DataLayer.AppContext.EntityFrameworkContext.ApplicationEfContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.DataLayer\AppContext\EntityFrameworkContext\ApplicationEfContext.cs:line 61
+   at AUA.Infrastructure.Repositories.BaseRepository.SaveChangesAsync(CancellationToken cancellationToken)
+   at AUA.Infrastructure.BaseServices.DomainEntityService`2.InsertAsync(TEntity entity, CancellationToken cancellationToken)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 54
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2024-05-17 19:32:19.485 INF ] HTTP POST /Api/V1/ExceptionHandler/Index responded 404 in 0.4682 ms
+[2024-05-17 19:32:19.485 ERR ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'StatusDescription', table 'AUADb.Ordering.Order'; column does not allow nulls. UPDATE fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:83670aaa-2b63-4647-8465-a0bb08f9ca4e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at AUA.ProjectName.DataLayer.AppContext.EntityFrameworkContext.ApplicationEfContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.DataLayer\AppContext\EntityFrameworkContext\ApplicationEfContext.cs:line 61
+   at AUA.Infrastructure.Repositories.BaseRepository.SaveChangesAsync(CancellationToken cancellationToken)
+   at AUA.Infrastructure.BaseServices.DomainEntityService`2.InsertAsync(TEntity entity, CancellationToken cancellationToken)
+   at AUA.ProjectName.CommandHandler.CommandHandlers.Ordering.OrderCommandHandlers.OrderCommandHandler.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.CommandHandler\CommandHandlers\Ordering\OrderCommandHandlers\OrderCommandHandler.cs:line 54
+   at AUA.Infrastructure.CommandInfra.Handler.BaseCommandHandlerInfra`2.Handle(TCommand command, CancellationToken cancellationToken)
+   at AUA.Infrastructure.PipelineBehaviors.Behaviors.AuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\AuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.TransactionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\TransactionBehaviour.cs:line 25
+   at AUA.ProjectName.Infrastructure.PipelineBehaviors.Behaviors.FullAuditLogBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.Infrastructure\PipelineBehaviors\Behaviors\FullAuditLogBehaviour.cs:line 19
+   at AUA.ProjectName.WebApi.Areas.Accounting.Controllers.OrderingController.InsertAsync(InsertOrderCommand command, CancellationToken cancellationToken) in C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\Areas\Accounting\Controllers\OrderingController.cs:line 17
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2024-05-17 19:34:09.512 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:42:51.301 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:47:56.163 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:50:44.584 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:52:09.971 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.
+[2024-05-17 19:53:14.700 WRN ] The WebRootPath was not found: C:\Users\ABS\Cookies\Desktop\Test_smple\1\1\AUA.ProjectName\AUA.ProjectName.WebApi\wwwroot. Static files may be unavailable.

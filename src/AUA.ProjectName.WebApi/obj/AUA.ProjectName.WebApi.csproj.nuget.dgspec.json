@@ -1,0 +1,1124 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj": {}
+  },
+  "projects": {
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.BackgroundServices\\AUA.ProjectName.BackgroundServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.BackgroundServices\\AUA.ProjectName.BackgroundServices.csproj",
+        "projectName": "AUA.ProjectName.BackgroundServices",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.BackgroundServices\\AUA.ProjectName.BackgroundServices.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.BackgroundServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.CommandHandler\\AUA.ProjectName.CommandHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.CommandHandler\\AUA.ProjectName.CommandHandler.csproj",
+        "projectName": "AUA.ProjectName.CommandHandler",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.CommandHandler\\AUA.ProjectName.CommandHandler.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.CommandHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Commands\\AUA.ProjectName.Commands.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Commands\\AUA.ProjectName.Commands.csproj",
+        "projectName": "AUA.ProjectName.Commands",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Commands\\AUA.ProjectName.Commands.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Commands\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj",
+        "projectName": "AUA.ProjectName.Common",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj",
+        "projectName": "AUA.ProjectName.DataLayer",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj",
+        "projectName": "AUA.ProjectName.DomainEntities",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj",
+        "projectName": "AUA.ProjectName.Infrastructure",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj",
+        "projectName": "AUA.ProjectName.Models",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Queries\\AUA.ProjectName.Queries.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Queries\\AUA.ProjectName.Queries.csproj",
+        "projectName": "AUA.ProjectName.Queries",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Queries\\AUA.ProjectName.Queries.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Queries\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.QueryHandler\\AUA.ProjectName.QueryHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.QueryHandler\\AUA.ProjectName.QueryHandler.csproj",
+        "projectName": "AUA.ProjectName.QueryHandler",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.QueryHandler\\AUA.ProjectName.QueryHandler.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.QueryHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.ReportHandler\\AUA.ProjectName.ReportHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.ReportHandler\\AUA.ProjectName.ReportHandler.csproj",
+        "projectName": "AUA.ProjectName.ReportHandler",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.ReportHandler\\AUA.ProjectName.ReportHandler.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.ReportHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Reports\\AUA.ProjectName.Reports.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Reports\\AUA.ProjectName.Reports.csproj",
+        "projectName": "AUA.ProjectName.Reports",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Reports\\AUA.ProjectName.Reports.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Reports\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Infrastructure\\AUA.ProjectName.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
+        "projectName": "AUA.ProjectName.Services",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Commands\\AUA.ProjectName.Commands.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Commands\\AUA.ProjectName.Commands.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Models\\AUA.ProjectName.Models.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Queries\\AUA.ProjectName.Queries.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Queries\\AUA.ProjectName.Queries.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Reports\\AUA.ProjectName.Reports.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.Reports\\AUA.ProjectName.Reports.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitRepository\\Test\\src\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj",
+        "projectName": "AUA.ProjectName.WebApi",
+        "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj",
+        "packagesPath": "C:\\Users\\ABS\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ABS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.BackgroundServices\\AUA.ProjectName.BackgroundServices.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.BackgroundServices\\AUA.ProjectName.BackgroundServices.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.CommandHandler\\AUA.ProjectName.CommandHandler.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.CommandHandler\\AUA.ProjectName.CommandHandler.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.QueryHandler\\AUA.ProjectName.QueryHandler.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.QueryHandler\\AUA.ProjectName.QueryHandler.csproj"
+              },
+              "D:\\GitRepository\\Test\\src\\AUA.ProjectName.ReportHandler\\AUA.ProjectName.ReportHandler.csproj": {
+                "projectPath": "D:\\GitRepository\\Test\\src\\AUA.ProjectName.ReportHandler\\AUA.ProjectName.ReportHandler.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Serilog.Enrichers.AspNetCore": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
